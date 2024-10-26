@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Website</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            width: 100%;        
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .content {
+            max-width: 800px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to GROUP SIS</h1>
+            <p>This is the homepage where you introduce the vendor and their offerings.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>List the vendor's products or services here with descriptions and prices.</p>
+        </section>
+
+        <section id="behind-the-scenes">
+            <h2>Behind the Scenes</h2>
+            <p>Share some stories or photos of the vendor's daily operations here.</p>
+        </section>
+    </div>
+
+</body>
+</html>
