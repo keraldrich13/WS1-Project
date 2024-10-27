@@ -440,8 +440,3 @@ margin-inline: auto;
         font-size: 1.5rem;
         border-radius: 100%;
     }
-
-    .header_container {
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
-    }
