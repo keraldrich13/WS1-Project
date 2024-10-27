@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="WS01.css"/>
     <title>Vendor Website</title>
+    <link href="/school/WS01.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
 </head>
 <body>
-
     <nav>
-        <ul>
+        <div class="nav_header">
+            <div class="logo nav_logo">
+                <a href="#">Group<span>9</span></a>
+            </div>
+            <div class="nav_menu_btn" id="menu_btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav_links" id="nav_links">
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
-        </ul>
+         </ul>
+         <div class="nav_btn">
+            <button class="btn"><i class="ri-shopping-bag-fill"></i></button>
+         </div>
     </nav>
-
-    <div class="content">
-        <section id="home">
-            <h1>Welcome to GROUP SIS</h1>
-            <p>This is the homepage where you introduce the vendor and their offerings.</p>
-        </section>
-
-        <section id="menu">
-            <h2>Menu</h2>
-            <p>List the vendor's products or services here with descriptions and prices.</p>
-        </section>
-
-        <section id="behind-the-scenes">
-            <h2>Behind the Scenes</h2>
-            <p>Share some stories or photos of the vendor's daily operations here.</p>
-        </section>
+<header class="section_container header_container" id="home"></header>
+    <div class="header_image">
+        <img src="https://cdn.concreteplayground.com/content/uploads/2020/10/McDonalds_cheeseburger_supplied-1920x1080.jpg" alt="header">
     </div>
-
-</body>
-</html>
+    <div class="header_content">
+        <h1>Menu <span>1</span></h1>
+            <p class="section_description">
+                asdsadadsadsaadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsasdsasda
+            </p>
+            <div class="header_btn">
+                <button class="btn">Order Now</button>
+            </div>
+    </div>
+</header>
