@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP 9 Order Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .nav_links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav .nav_links li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav .nav_links li a:hover {
+            background: #ff7e5f;
+        }
+
+        .section_container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 40px 20px;
+        }
+
+        .menu_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu_item {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            color: black;
+            text-align: center;
+        }
+
+        .menu_item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        
+        .video_section iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <div class="logo"><a href="#">GROUP<span>9</span></a></div>
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="section_container" id="home">
+        <h1>Welcome to GROUP 9 Order Shop</h1>
+        <p>Welcome to the ultimate food experience crafted by Group 9! Discover our curated menu, explore our processes in the "Behind the Scenes" section, and get ready to satisfy your cravings with our exclusive offerings.</p>
+    </section>
+
+   
+    <section class="section_container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu_grid">
+            <div class="menu_item">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462556607_2100488587011605_1699506224910539953_n.png" alt="Fries + Drinks Combo">
+                <h4>Fries + Drinks Combo</h4>
+                <p>Deep Fry Fries and Juicy Juice</p>
+                <p>₱30.00</p>
+            </div>
+           
+        </div>
+    </section>
+
+   
+    <section class="section_container" id="behind-the-scenes">
+        <h2>Behind the Scenes</h2>
+        <div class="video_section">
+            <iframe src="https://www.youtube.com/embed/kiVuc5o2Rks" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+
+</body>
+</html>
