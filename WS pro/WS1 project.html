@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="WS!.css">
+    <title>Irene's Little Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6f0a88ab, #050000);
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .nav_links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav .nav_links li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav .nav_links li a:hover {
+            background: #ff7e5f;
+        }
+
+        .section_container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 40px 20px;
+        }
+
+        .menu_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu_item {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            color: black;
+            text-align: center;
+        }
+
+        .menu_item img {
+            max-width: 50%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        
+        .video_section iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <div class="logo"><a href="#">GROUP<span>9</span></a></div>
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="section_container" id="home">
+        <h1>Irene's Little Shop</h1>
+        <p>Welcome to the ultimate to Irene's little shop </p>
+    </section>
+
+   
+    <section class="section_container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu_grid">
+            <div class="menu_item">
+                <img src="C:\Users\o876\Downloads\WS pro\1bab5c7c-14b8-4cbd-8fe3-cb0af8de62f5.jfif" alt="Fries with Drink">
+                <h4>Fries + Drinks Combo</h4>
+                <p>Deep Fry Fries and Juicy Juice</p>
+                <p>₱30.00</p>
+            </div>
+            <div class="menu_item">
+                <img src="C:\Users\o876\Downloads\WS pro\66d1924e-8c76-421a-81bd-436c94f2c50f.jfif" alt="Cheese Stick">
+                <h4>Cheese Stick</h4>
+                <p>Cheese Stick Deep fried to perfection</p>
+                <p>₱30.00</p>
+            </div>
+            <div class="menu_item">
+                <img src="C:\Users\o876\Downloads\WS pro\4505f3a9-1d7a-42fc-a4f9-c4dd2a5e72e9.jfif" alt="Kikiam">
+                <h4>Kickiam</h4>
+                <p>Kickyam</p>
+                <p>₱30.00</p>
+            </div>
+            <div class="menu_item">
+                <img src="C:\Users\o876\Downloads\WS pro\8c47725c-979b-455f-b32f-b05bee09ab84.jfif" alt="Cheese Dog">
+                <h4>Cheese Dog</h4>
+                <p>Cheese Dog</p>
+                <p>₱30.00</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="section_container" id="behind-the-scenes">
+        <h2>Behind the Scenes</h2>
+        <div class="video_section">
+            <iframe src="https://www.youtube.com/embed/kiVuc5o2Rks" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+
+</body>
+</html>
