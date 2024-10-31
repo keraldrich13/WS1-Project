@@ -21,18 +21,23 @@
     padding: 5rem 1rem;
 }
 
+.section_documentary {
+    text-align: center;
+    color: #333;
+    line-height: 1.75rem;
+}
+
+.header_content p {
+    color: #333;
+    line-height: 1.75rem;
+}
+
 .section_header {
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 3rem;
     color: #333;
-    text-align: center;
-}
-
-.section_description {
-    color: black;
-    line-height: 1.75rem;
     text-align: center;
 }
 
@@ -56,6 +61,10 @@
 .logo a {
     font-size: 2rem;
     font-weight: 700;
+}
+
+.nav_logo a {
+    color: #333;
 }
 
 .nav_logo a span {
@@ -107,24 +116,10 @@ nav {
     background-color: transparent;
     transition: 0.5s;
     z-index: 1;
-    transform: translateY(-125%);
-}
-
-.nav_links.open {
-    transform: translateY(0);
 }
 
 .nav_links a {
-    font: 500;
-    color: red;
-}
-
-.nav_links a:hover {
-    color: red;
-}
-
-.nav_btn {
-    display: none;
+    font-size: 20px;
 }
 
 .header_container{
@@ -133,9 +128,27 @@ nav {
     overflow: hidden;
 }
 
+.header_image::after {
+    position: absolute;
+    content: "";
+    bottom: 21%;
+    left: 70%;
+    transform: translateX(-50%);
+    height: 50%;
+    width: 33%;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 .header_image img {
 max-width: 500px;
 margin-inline: auto;
+}
+
+.separator {
+    height: 20px;
+    margin: 0;
 }
 
 .header_content h1 {
@@ -175,6 +188,7 @@ margin-inline: auto;
     justify-content: space-between;
     padding: 2rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(255, 203, 105);
     border-radius: 3rem;
     transition: 0.3s;
     text-align: center;
@@ -192,7 +206,7 @@ margin-inline: auto;
 }
 
 .special_card:hover {
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .special_card img {
@@ -219,15 +233,13 @@ margin-inline: auto;
 }
 
 .special_card p {
-    margin-bottom: 0.rem;
-    color: black;
+    color: #333;
     line-height: 1.75rem;
 }
 
-.special_footer .price {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
+.special_card .price {
+    color: black;
+    line-height: 1.75rem;
 }
 
 .special_grid {
@@ -253,9 +265,6 @@ nav{
     background-color: transparent;
 }
 
-.nav_logo a {
-    color: #333;
-}
 
 .nav_menu_btn {
     display: none;
@@ -263,9 +272,18 @@ nav{
 
 .nav_links {
     position: static;
+    top: 60px;
+    left: 0;
+    width: 100%;
     padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    gap: 2rem;
     background-color: transparent;
+    transition: 0.5s;
+    z-index: 1;
     transform: none;
     justify-content: center;
 }
@@ -275,7 +293,7 @@ nav{
 }
 
 .nav_links a:hover {
-    color: black;
+    color: red;
 }
 
 .nav_btn {
