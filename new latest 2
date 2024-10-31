@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP 9 Order Shop</title>
+    <style>
+        /* Base styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .logo a {
+            color: #feb47b;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        nav .logo a:hover {
+            transform: scale(1.1);
+        }
+
+        nav .nav_links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .nav_links li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: #ff7e5f;
+            transition: background 0.4s ease, transform 0.3s ease;
+        }
+
+        nav .nav_links li a:hover {
+            background: #feb47b;
+            transform: scale(1.1);
+        }
+
+        /* Section styling */
+        .section_container {
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        /* Fade-in on scroll */
+        .section_container.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Title styling with gradient */
+        h2 {
+            font-size: 2em;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        /* Menu styling */
+        .menu_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .menu_item {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            padding: 20px;
+            color: black;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu_item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Menu item image styling */
+        .menu_item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        .menu_item img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Video styling */
+        .video_section iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #feb47b;
+        }
+
+        @media (max-width: 600px) {
+            nav .nav_links {
+                flex-direction: column;
+            }
+
+            .section_container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="#">GROUP<span style="color: #feb47b;">9</span></a></div>
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+        </ul>
+    </nav>
+
+    <section class="section_container" id="home">
+        <h1>Welcome to GROUP 9 Order Shop</h1>
+        <p>Welcome to the ultimate food experience crafted by Group 9! Discover our curated menu, explore our processes in the "Behind the Scenes" section, and get ready to satisfy your cravings with our exclusive offerings.</p>
+    </section>
+
+    <section class="section_container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu_grid">
+            <div class="menu_item">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462556607_2100488587011605_1699506224910539953_n.png" alt="Fries and Drinks Combo Image">
+                <h4>Fries + Drinks Combo</h4>
+                <p>Deep Fry Fries and Juicy Juice</p>
+                <p>₱30.00</p>
+            </div>
+            <!-- Additional menu items can go here -->
+        </div>
+    </section>
+
+    <section class="section_container" id="behind-the-scenes">
+        <h2>Behind the Scenes</h2>
+        <div class="video_section">
+            <iframe src="https://www.youtube.com/embed/kiVuc5o2Rks" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Behind the Scenes Video"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us: group9@ordershop.com | Follow us on social media</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal effect
+        window.addEventListener("scroll", function() {
+            const sections = document.querySelectorAll(".section_container");
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add("show");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
